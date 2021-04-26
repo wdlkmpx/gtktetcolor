@@ -10,15 +10,11 @@ colors is removed and the above blocks will collapse. If two or more
 sequences will be removed simultaneously the player has got bonus
 points. The game will be over when new block cannot be placed on screen. 
 
-It was made with Glade - http://glade.gnome.org
-
-
 Requirements
 ============
 
- o GTK+ 2.6.0 or above - http://www.gtk.org
- o GNOME (optional, 2.x version) - http://www.gnome.org
- 
+ o GTK+ 2/3
+
 
 Installation
 ============
@@ -28,39 +24,9 @@ It should be possible to do an installation by doing
     make
     make install
 in the top directory.
-If you have GNOME and don't want to compile gtktetcolor with GNOME support use 
-./configure --disable-gnome instead. You can define other prefix than
 default /usr/local with --prefix option. For example
     ./configure --prefix=/usr
-It is recommended to install GNOME version of gtktetcolor with the same
-prefix as gnome-libs. Probably you also will need to change local state
-directory for modifiable  single-machine data, it may differ from
-default PREFIX/var on your machine.
 
-
-Installation on Windows
-=======================
-
-Gtktetcolor can be compiled for win32 platform with Cygwin/MinGW
-(http://www.cygwin.com) gcc compiler and linked with gtk+-2.x library
-(http://www.gimp.org/win32). Set CFLAGS shell variable to 
-"-mno-cygwin -mms-bitfields -mwindows -DWIN32" before running configure
-script.
-
-Score file for non-GNOME version
-================================
-
-You can create system score file PREFIX/share/gtktetcolor/gtktetcolor_score
-(where PREFIX is usually /usr/local) writable for users.
-For example:
-    touch /usr/local/share/gtktetcolor/gtktetcolor_score
-    chmod 664 /usr/local/share/gtktetcolor/gtktetcolor_score
-    chgrp users /usr/local/share/gtktetcolor/gtktetcolor_score
-    
-If system score file will be unwritable for user, .gtktetcolor_score file from
-home directory will be used.    
-
-GNOME-enabled Gtktetcolor uses standard GNOME routines.
 
 Sounds
 ======
@@ -91,8 +57,8 @@ where n is number of cells in the line.
 
 where lines is number of simultaneously destroyed lines.
 
-Homepage
-========
 
-http://canopus.iacp.dvo.ru/~panov/gtktetcolor/
-http://www.dvgu.ru/ifit/~panov/gtktetcolor/ (mirror)
+TODO
+====
+
+- add Tetcolor II rules (http://tetcolor.newmail.ru, link is broken)
