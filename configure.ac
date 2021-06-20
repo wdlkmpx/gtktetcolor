@@ -11,7 +11,7 @@ AC_CONFIG_HEADER(config.h)
 AM_GNU_GETTEXT([external])
 m4_ifdef([AM_MAINTAINER_MODE], [AM_MAINTAINER_MODE])
 
-LT_INIT
+#L#T_INIT
 
 # Checks for programs.
 AC_PROG_CC
@@ -70,5 +70,5 @@ AC_OUTPUT([
 Makefile
 src/Makefile
 sounds/Makefile
-po/Makefile.in
+po/Makefile
 ])
